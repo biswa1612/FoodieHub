@@ -1,0 +1,35 @@
+
+<% layout('layouts/boilerplate')%>
+<link rel="stylesheet" href="/stylesheets/login.css">
+<div class="container justify-content-center align-items-center mb-3">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img src="https://res.cloudinary.com/biswajitrout/image/upload/v1632826577/FoodieHub/foodiehub_zrahrj.jpg"
+                    alt="" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Login To FoodieHub</h5>
+                   
+                    <form action="/login" method="POST" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" autofocus required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <p style=" text-shadow: none;">New User?<a href="/register" style="text-decoration: none;">Register</a></p>
+                        <button class="btn btn-success col-12">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

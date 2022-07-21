@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://static.dezeen.com/uploads/2021/03/hapi-sushi-roth-shepparad-architects-denver-colorado-interiors-design-2048x1152.jpg");
+    background-size: auto;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}

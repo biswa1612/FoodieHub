@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate') -%>
+    <h1>All Restaurants</h1>
+    <p><a href="/restaurants/new">Add Restaurant</a></p>
+
+    
+        <% for(let restaurant of restaurants) {%>
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <% if(restaurant.images.length) { %>
+                            <img class="img-fluid" alt="" src="<%= restaurant.images[0].url %>">
+                        <% } else {%>
+                        
+                            <img class="img-fluid" alt="" src="https://static.dezeen.com/uploads/2021/03/hapi-sushi-roth-shepparad-architects-denver-colorado-interiors-design-2048x1152.jpg">
+                        <% } %>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= restaurant.title %></h5>
+                            <p class="card-text"><%= restaurant.description %></p>
+                            <p class="card-text">
+                                <small class="text-muted"><%= restaurant.location %></small>
+                            </p>
+                            <a href="/restaurants/<%= restaurant._id %>" class="btn btn-primary">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <% } %>
+
+    
